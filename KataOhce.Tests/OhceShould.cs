@@ -45,4 +45,24 @@ public class OhceShould
         console.Received().WriteLine(output);
     }
     
+    [Fact]
+    public void PrintPalindromeAndGoodWord()
+    {
+        // arrange
+        var console = Substitute.For<IConsole>();
+        var clock = Substitute.For<IClock>();
+        console.ReadLine().Returns("oto");
+        
+        var ohce = new Ohce(console, clock);
+        
+        // act
+        ohce.Echo();
+        
+        // assert
+        Received.InOrder(() =>
+        {
+            console.WriteLine("oto");
+            console.WriteLine("¡Bonita palabra!");
+        });
+    }
 }
