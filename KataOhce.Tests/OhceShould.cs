@@ -6,6 +6,10 @@ public class OhceShould
 {
     [Theory]
     [InlineData("","")]
+    [InlineData("a","a")]
+    [InlineData("la","al")]
+    [InlineData("las","sal")]
+    [InlineData("alas","sala")]
     public void PrintReverseString(string input, string output)
     {
         // arrange

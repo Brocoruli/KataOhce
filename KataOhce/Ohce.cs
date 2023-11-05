@@ -1,14 +1,19 @@
+using Microsoft.VisualBasic;
+
 namespace KataOhce;
 
 public class Ohce
 {
+    private readonly IConsole _console;
+
     public Ohce(IConsole console)
     {
-        throw new NotImplementedException();
+        _console = console;
     }
 
     public void Echo()
     {
-        throw new NotImplementedException();
+        var readLine = _console.ReadLine();
+        _console.WriteLine(Strings.StrReverse(readLine));
     }
 }
