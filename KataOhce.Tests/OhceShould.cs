@@ -28,6 +28,8 @@ public class OhceShould
     
     [Theory]
     [InlineData(10, "¡Buenos dias raul!")]
+    [InlineData(18, "¡Buenas tardes raul!")]
+    [InlineData(4, "¡Buenas noches raul!")]
     public void PrintGreet(int hour, string output)
     {
         // arrange

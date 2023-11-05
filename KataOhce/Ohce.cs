@@ -5,10 +5,13 @@ namespace KataOhce;
 public class Ohce
 {
     private readonly IConsole _console;
+    private string _name;
+    private IClock _clock;
 
     public Ohce(IConsole console, IClock clock)
     {
         _console = console;
+        _clock = clock;
     }
 
     public void Echo()
@@ -19,6 +22,19 @@ public class Ohce
 
     public void Greet(string arg)
     {
-        throw new NotImplementedException();
+        _name = arg;
+        var hour = _clock.GetHour();
+        if (hour > 6 && hour <= 12)
+        {
+            _console.WriteLine("¡Buenos dias " + _name + "!");
+        }
+        else if (hour > 12 && hour <= 20)
+        {
+            _console.WriteLine("¡Buenas tardes " + _name + "!");
+        }
+        else
+        {
+            _console.WriteLine("¡Buenas noches " + _name + "!");
+        }
     }
 }
