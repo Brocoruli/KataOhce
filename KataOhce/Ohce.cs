@@ -17,7 +17,17 @@ public class Ohce
     public void Echo()
     {
         var readLine = _console.ReadLine();
+        PrintPalindrome(readLine);
+    }
+    
+    private void PrintPalindrome(string readLine)
+    {
         _console.WriteLine(Strings.StrReverse(readLine));
+
+        if (readLine.Equals(Strings.StrReverse(readLine)))
+        {
+            _console.WriteLine("¡Bonita palabra!");
+        }
     }
 
     public void Greet(string arg)
