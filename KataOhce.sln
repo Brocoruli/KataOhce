@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataOhce", "KataOhce\KataOhce.csproj", "{45860B9F-8934-430F-8E6A-D168C44287EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataOhce.Tests", "KataOhce.Tests\KataOhce.Tests.csproj", "{EE9F3564-7034-4BDB-8C91-34B1479EDD46}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45860B9F-8934-430F-8E6A-D168C44287EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45860B9F-8934-430F-8E6A-D168C44287EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45860B9F-8934-430F-8E6A-D168C44287EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45860B9F-8934-430F-8E6A-D168C44287EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE9F3564-7034-4BDB-8C91-34B1479EDD46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE9F3564-7034-4BDB-8C91-34B1479EDD46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE9F3564-7034-4BDB-8C91-34B1479EDD46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE9F3564-7034-4BDB-8C91-34B1479EDD46}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
