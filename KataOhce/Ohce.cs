@@ -6,7 +6,7 @@ public class Ohce
 {
     private readonly IConsole _console;
 
-    public Ohce(IConsole console)
+    public Ohce(IConsole console, IClock clock)
     {
         _console = console;
     }
@@ -15,5 +15,10 @@ public class Ohce
     {
         var readLine = _console.ReadLine();
         _console.WriteLine(Strings.StrReverse(readLine));
+    }
+
+    public void Greet(string arg)
+    {
+        throw new NotImplementedException();
     }
 }
