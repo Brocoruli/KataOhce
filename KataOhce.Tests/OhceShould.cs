@@ -57,6 +57,8 @@ public class OhceShould
         
         // act
         ohce.Echo();
+        console.ReadLine().Returns("Stop!");
+        ohce.Echo();
         
         // assert
         Received.InOrder(() =>

@@ -7,6 +7,7 @@ public class Ohce
     private readonly IConsole _console;
     private string _name;
     private IClock _clock;
+    public bool IsFinish { get; private set; }
 
     public Ohce(IConsole console, IClock clock)
     {
@@ -16,9 +17,10 @@ public class Ohce
 
     public void Echo()
     {
-        var readLine = _console.ReadLine();
-        PrintPalindrome(readLine);
-        SayGoodBye(readLine);
+
+           var readLine = _console.ReadLine();
+            PrintPalindrome(readLine);
+            SayGoodBye(readLine);
     }
     
     private void SayGoodBye(string readLine)
@@ -26,7 +28,7 @@ public class Ohce
         if (readLine.Equals("Stop!"))
         {
             _console.WriteLine("Adios " + _name);
-            
+            IsFinish = true;
         }
     }
     
