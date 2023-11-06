@@ -65,4 +65,20 @@ public class OhceShould
             console.WriteLine("¡Bonita palabra!");
         });
     }
+    
+    [Fact]
+    public void SayGoodBye()
+    {
+        // arrange
+        var console = Substitute.For<IConsole>();
+        var clock = Substitute.For<IClock>();
+        var ohce = new Ohce(console, clock);
+        
+        // act
+        console.ReadLine().Returns("Stop!");
+        ohce.Echo();
+        
+        // assert
+        console.Received().WriteLine("Adios raul");
+    }
 }
