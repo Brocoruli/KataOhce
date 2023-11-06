@@ -75,6 +75,7 @@ public class OhceShould
         var ohce = new Ohce(console, clock);
         
         // act
+        ohce.Greet("raul");
         console.ReadLine().Returns("Stop!");
         ohce.Echo();
         

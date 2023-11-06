@@ -18,6 +18,16 @@ public class Ohce
     {
         var readLine = _console.ReadLine();
         PrintPalindrome(readLine);
+        SayGoodBye(readLine);
+    }
+    
+    private void SayGoodBye(string readLine)
+    {
+        if (readLine.Equals("Stop!"))
+        {
+            _console.WriteLine("Adios " + _name);
+            
+        }
     }
     
     private void PrintPalindrome(string readLine)
